@@ -1,7 +1,7 @@
 {
   "name": "oneday",
   "version": "1.0.0",
-  "description": "The amount of milliseconds in one day",
+  "description": "The number of milliseconds in one day",
   "homepage": "https://github.com/bevry/oneday",
   "license": {
     "type": "MIT"
