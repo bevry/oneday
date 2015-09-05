@@ -23,7 +23,7 @@
 
 <!-- DESCRIPTION/ -->
 
-The amount of milliseconds in one day
+The number of milliseconds in one day
 
 <!-- /DESCRIPTION -->
 
