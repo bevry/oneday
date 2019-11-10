@@ -1,35 +1,54 @@
-# 27 March 2015
+# 2019 January 26
 # https://github.com/bevry/base
 
+# System Files
+**/.DS_Store
+
 # Temp Files
+yarn.lock
 **/.docpad.db
-**/out.*
 **/*.log
 **/*.cpuprofile
 **/*.heapsnapshot
 
-# Build Files
+# Editor Files
+.c9/
+.vscode/
+
+# Private Files
+.env
+.idea
+.cake_task_cache
+
+# Build Caches
 build/
 components/
 bower_components/
 node_modules/
+.pnp/
+.pnp.js
 
-# Private Files
-.env
-
-# Development Files
-.editorconfig
-.eslintrc
-.jshintrc
-coffeelint.json
-.travis*
-Cakefile
-Makefile
+# Documentation Files
+docs/
+guides/
 BACKERS.md
 CONTRIBUTING.md
 HISTORY.md
-**/src/
-**/test/
+
+# Development Files
+web/
+**/example*
+**/test*
+.babelrc*
+.editorconfig
+.eslintrc*
+.jshintrc
+.jscrc
+coffeelint*
+.travis*
+nakefile*
+Cakefile
+Makefile
 
 # Other Package Definitions
 template.js

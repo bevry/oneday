@@ -1,58 +1,114 @@
 {
   "name": "oneday",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The number of milliseconds in one day",
   "homepage": "https://github.com/bevry/oneday",
-  "license": {
-    "type": "MIT"
-  },
+  "license": "MIT",
   "keywords": [
     "milliseconds",
     "24 hours",
     "1 day"
   ],
   "badges": {
-    "travis": false,
-    "npm": true,
-    "npmdownloads": true,
-    "david": true,
-    "daviddev": true,
-    "gratipay": "bevry",
-    "flattr": "344188/balupton-on-Flattr",
-    "paypal": "QB8GQPZAH84N6",
-    "bitcoin": "https://bevry.me/bitcoin",
-    "wishlist": "https://bevry.me/wishlist"
+    "list": [
+      "travisci",
+      "npmversion",
+      "npmdownloads",
+      "daviddm",
+      "daviddmdev",
+      "---",
+      "patreon",
+      "flattr",
+      "liberapay",
+      "buymeacoffee",
+      "opencollective",
+      "crypto",
+      "paypal",
+      "wishlist"
+    ],
+    "config": {
+      "buymeacoffeeUsername": "balupton",
+      "cryptoURL": "https://bevry.me/crypto",
+      "flattrUsername": "balupton",
+      "liberapayUsername": "bevry",
+      "opencollectiveUsername": "bevry",
+      "patreonUsername": "bevry",
+      "paypalURL": "https://bevry.me/paypal",
+      "wishlistURL": "https://bevry.me/wishlist",
+      "travisTLD": "com"
+    }
+  },
+  "funding": {
+    "type": "cooperative",
+    "url": "https://bevry.me/fund"
   },
   "author": "2015+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
   ],
-  "contributors": [],
+  "contributors": [
+    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
+    "Dom Christie (domchristie.co.uk)",
+    "Dominic Tarr (http://protozoa.nz)"
+  ],
   "bugs": {
     "url": "https://github.com/bevry/oneday/issues"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/bevry/oneday.git"
+    "url": "https://github.com/bevry/oneday.git"
   },
-  "browsers": true,
   "engines": {
     "node": ">=0.12"
   },
-  "dependencies": {},
+  "editions": [
+    {
+      "description": "JSON",
+      "directory": "source",
+      "entry": "index.json",
+      "tags": [
+        "json"
+      ],
+      "engines": {
+        "node": true,
+        "browsers": true
+      }
+    }
+  ],
+  "main": "source/index.json",
+  "browser": "source/index.json",
   "devDependencies": {
-    "projectz": "^0.5.0"
+    "assert-helpers": "4.10.0",
+    "kava": "^3.1.0",
+    "projectz": "^1.9.0",
+    "valid-directory": "^1.0.0"
   },
-  "main": "./index.js",
+  "eslintConfig": {
+    "extends": [
+      "bevry"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "scripts": {
-    "clean": "node --harmony nakefile.js clean",
-    "setup": "node --harmony nakefile.js setup",
-    "compile": "node --harmony nakefile.js compile",
-    "watch": "node --harmony nakefile.js watch",
-    "verify": "node --harmony nakefile.js verify",
-    "meta": "node --harmony nakefile.js meta",
-    "prepare": "node --harmony nakefile.js prepare",
-    "release": "node --harmony nakefile.js release",
-    "test": "echo 'no tests needed'"
+    "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
+    "our:compile": "echo no need for this project",
+    "our:deploy": "echo no need for this project",
+    "our:meta": "npm run our:meta:projectz",
+    "our:meta:projectz": "projectz compile",
+    "our:release": "npm run our:release:prepare && npm run our:release:check-changelog && npm run our:release:check-dirty && npm run our:release:tag && npm run our:release:push",
+    "our:release:check-changelog": "cat ./HISTORY.md | grep v$npm_package_version || (echo add a changelog entry for v$npm_package_version && exit -1)",
+    "our:release:check-dirty": "git diff --exit-code",
+    "our:release:prepare": "npm run our:clean && npm run our:compile && npm run our:test && npm run our:meta",
+    "our:release:push": "git push origin master && git push origin --tags",
+    "our:release:tag": "export MESSAGE=$(cat ./HISTORY.md | sed -n \"/## v$npm_package_version/,/##/p\" | sed 's/## //' | awk 'NR>1{print buf}{buf = $0}') && test \"$MESSAGE\" || (echo 'proper changelog entry not found' && exit -1) && git tag v$npm_package_version -am \"$MESSAGE\"",
+    "our:setup": "npm run our:setup:install",
+    "our:setup:install": "npm install",
+    "our:test": "npm run our:verify && npm test",
+    "our:verify": "npm run our:verify:directory",
+    "our:verify:directory": "npx valid-directory",
+    "test": "node ./source/test.js"
   }
 }
