@@ -78,7 +78,7 @@
   "main": "source/index.json",
   "browser": "source/index.json",
   "devDependencies": {
-    "assert-helpers": "5.0.0",
+    "assert-helpers": "5.1.0",
     "kava": "^3.1.0",
     "projectz": "^1.9.0",
     "valid-directory": "^1.0.0"
