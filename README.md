@@ -115,7 +115,8 @@ These amazing people have contributed code to this project:
 
 <ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/oneday/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/oneday">view contributions</a></li>
 <li><a href="domchristie.co.uk">Dom Christie</a> — <a href="https://github.com/bevry/oneday/commits?author=domchristie" title="View the GitHub contributions of Dom Christie on repository bevry/oneday">view contributions</a></li>
-<li><a href="http://protozoa.nz">Dominic Tarr</a> — <a href="https://github.com/bevry/oneday/commits?author=dominictarr" title="View the GitHub contributions of Dominic Tarr on repository bevry/oneday">view contributions</a></li></ul>
+<li><a href="http://protozoa.nz">Dominic Tarr</a> — <a href="https://github.com/bevry/oneday/commits?author=dominictarr" title="View the GitHub contributions of Dominic Tarr on repository bevry/oneday">view contributions</a></li>
+<li><a href="http://github.com/apps/dependabot-preview">dependabot-preview[bot]</a> — <a href="https://github.com/bevry/oneday/commits?author=dependabot-preview[bot]" title="View the GitHub contributions of dependabot-preview[bot] on repository bevry/oneday">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/oneday/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 

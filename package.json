@@ -1,6 +1,6 @@
 {
   "name": "oneday",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "The number of milliseconds in one day",
   "homepage": "https://github.com/bevry/oneday",
   "license": "MIT",
@@ -38,10 +38,7 @@
       "travisTLD": "com"
     }
   },
-  "funding": {
-    "type": "cooperative",
-    "url": "https://bevry.me/fund"
-  },
+  "funding": "https://bevry.me/fund",
   "author": "2015+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
@@ -49,7 +46,8 @@
   "contributors": [
     "Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
     "Dom Christie (domchristie.co.uk)",
-    "Dominic Tarr (http://protozoa.nz)"
+    "Dominic Tarr (http://protozoa.nz)",
+    "dependabot-preview[bot] (http://github.com/apps/dependabot-preview)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/oneday/issues"
@@ -78,9 +76,9 @@
   "main": "source/index.json",
   "browser": "source/index.json",
   "devDependencies": {
-    "assert-helpers": "5.2.1",
-    "kava": "^3.1.0",
-    "projectz": "^1.9.0",
+    "assert-helpers": "4.10.0",
+    "kava": "^3.2.0",
+    "projectz": "^1.10.0",
     "valid-directory": "^1.0.0"
   },
   "eslintConfig": {
