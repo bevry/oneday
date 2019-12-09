@@ -1,6 +1,6 @@
 {
   "name": "oneday",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "The number of milliseconds in one day",
   "homepage": "https://github.com/bevry/oneday",
   "license": "MIT",
@@ -17,6 +17,7 @@
       "daviddm",
       "daviddmdev",
       "---",
+      "githubsponsors",
       "patreon",
       "flattr",
       "liberapay",
@@ -27,6 +28,7 @@
       "wishlist"
     ],
     "config": {
+      "githubSponsorsUsername": "balupton",
       "buymeacoffeeUsername": "balupton",
       "cryptoURL": "https://bevry.me/crypto",
       "flattrUsername": "balupton",
@@ -73,13 +75,14 @@
       }
     }
   ],
+  "type": "commonjs",
   "main": "source/index.json",
   "browser": "source/index.json",
   "devDependencies": {
-    "assert-helpers": "^5.7.0",
-    "kava": "^4.2.0",
-    "projectz": "^1.13.0",
-    "valid-directory": "^1.4.0"
+    "assert-helpers": "^5.8.0",
+    "kava": "^4.4.0",
+    "projectz": "^1.15.0",
+    "valid-directory": "^1.5.0"
   },
   "eslintConfig": {
     "extends": [
