@@ -1,8 +1,8 @@
 'use strict'
 
-const { equal } = require('assert-helpers')
-const kava = require('kava')
-const oneday = require('./')
+import { equal } from 'assert-helpers'
+import kava from 'kava'
+import oneday from './index.js'
 
 kava.suite('oneday', function(suite, test) {
 	test('is actually one day', function() {
