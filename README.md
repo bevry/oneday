@@ -59,7 +59,7 @@ setInterval(function () {
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/oneday/^4.0.0'
+    import pkg from '//cdn.pika.dev/oneday/^4.1.0'
 </script>
 ```
 
@@ -67,7 +67,7 @@ setInterval(function () {
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/oneday@^4.0.0'
+    import pkg from '//unpkg.com/oneday@^4.1.0'
 </script>
 ```
 
@@ -75,7 +75,7 @@ setInterval(function () {
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/oneday@4.0.0'
+    import pkg from '//dev.jspm.io/oneday@4.1.0'
 </script>
 ```
 
@@ -139,9 +139,7 @@ These amazing people have contributed code to this project:
 
 <ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/oneday/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/oneday">view contributions</a></li>
 <li><a href="https://github.com/domchristie">Dom Christie</a> — <a href="https://github.com/bevry/oneday/commits?author=domchristie" title="View the GitHub contributions of Dom Christie on repository bevry/oneday">view contributions</a></li>
-<li><a href="http://protozoa.nz">Dominic Tarr</a></li>
-<li><a href="https://github.com/dominictarr">Dominic Tarr</a> — <a href="https://github.com/bevry/oneday/commits?author=dominictarr" title="View the GitHub contributions of Dominic Tarr on repository bevry/oneday">view contributions</a></li>
-<li><a href="domchristie.co.uk">Dom Christie</a></li></ul>
+<li><a href="https://github.com/dominictarr">Dominic Tarr</a> — <a href="https://github.com/bevry/oneday/commits?author=dominictarr" title="View the GitHub contributions of Dominic Tarr on repository bevry/oneday">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/oneday/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
