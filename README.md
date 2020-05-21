@@ -59,7 +59,7 @@ setInterval(function () {
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/oneday/^4.2.0'
+    import pkg from '//cdn.pika.dev/oneday/^4.3.0'
 </script>
 ```
 
@@ -67,7 +67,7 @@ setInterval(function () {
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/oneday@^4.2.0'
+    import pkg from '//unpkg.com/oneday@^4.3.0'
 </script>
 ```
 
@@ -75,7 +75,7 @@ setInterval(function () {
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/oneday@4.2.0'
+    import pkg from '//dev.jspm.io/oneday@4.3.0'
 </script>
 ```
 
