@@ -58,14 +58,14 @@ setInterval(function () {
 <a href="https://deno.land" title="Deno is a secure runtime for JavaScript and TypeScript, it is an alternative for Node.js"><h3>Deno</h3></a>
 
 ``` typescript
-import pkg from 'https://unpkg.com/oneday@^4.8.0/edition-deno/index.ts'
+import pkg from 'https://unpkg.com/oneday@^4.9.0/edition-deno/index.ts'
 ```
 
 <a href="https://www.pika.dev/cdn" title="100% Native ES Modules CDN"><h3>pika</h3></a>
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/oneday/^4.8.0'
+    import pkg from '//cdn.pika.dev/oneday/^4.9.0'
 </script>
 ```
 
@@ -73,7 +73,7 @@ import pkg from 'https://unpkg.com/oneday@^4.8.0/edition-deno/index.ts'
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/oneday@^4.8.0'
+    import pkg from '//unpkg.com/oneday@^4.9.0'
 </script>
 ```
 
@@ -81,7 +81,7 @@ import pkg from 'https://unpkg.com/oneday@^4.8.0/edition-deno/index.ts'
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/oneday@4.8.0'
+    import pkg from '//dev.jspm.io/oneday@4.9.0'
 </script>
 ```
 
